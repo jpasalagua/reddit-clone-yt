@@ -196,7 +196,7 @@ const Home: NextPage = () => {
     };
   }, [postStateValue.posts, user?.uid]);
 
-  const newLocal = <Stack>
+  const newLocal = ( <Stack>
     {postStateValue.posts.map((post: Post, index) => (
       <PostItem
         key={post.id}
@@ -211,7 +211,8 @@ const Home: NextPage = () => {
         onSelectPost={onSelectPost}
         homePage />
     ))}
-  </Stack>;
+  </Stack>
+  );
   return (
     <PageContentLayout>
       <>
